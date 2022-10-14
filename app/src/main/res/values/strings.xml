@@ -4,9 +4,40 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
+    <string name="next">Login</string>
     <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="permission_rationale">Location data is used as part of the Google Fit API</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="ok">OK</string>
+    <string name="settings">Settings</string>
+    
+    <string name="label_3d_music">Experiance 3D Music</string>
+    <string name="label_Controls">Controls</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_lets_go">Lets Go!</string>
+    <string name="btn_close">Close</string>
+    <string name="btn_next">Next</string>
+    <string name="title_Headtracking">3D Headtracking</string>
+    <string name="label_lorem_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley</string>
+    <string name="btn_skip">Skip</string>
+    <string name="btn_calibrate">Calibrate</string>
+    <string name="label_turn_left">Turn Left</string>
+    <string name="label_turn_right">Turn Right</string>
+    <string name="label_look_up">Look Up</string>
+    <string name="label_look_down">Look Down</string>
+    <string name="label_tilt_left">Tilt Left</string>
+    <string name="label_tilt_right">Tilt Right</string>
+    <string name="label_headtrack_desc">Calibration successful, 3D Head Tracking enables you to [More text can be share by product team]</string>
+    <string name="label_click_play">Click to play the audio &amp; experience the world of 3D music.</string>
+    <string name="btn_lear_more">Learn more</string>
+    <string name="btn_restart">Restart</string>
+    <string name="btn_done">Done</string>
+    <string name="label_how_it_work">How it Works</string>
+    <string name="label_how_desc">Shake your head to reject incoming calls or to skip tracks.</string>
+
 </resources>

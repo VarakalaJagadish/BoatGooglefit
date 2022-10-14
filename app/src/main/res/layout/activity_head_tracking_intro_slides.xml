@@ -1,6 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="28dp"
+        android:background="@color/solid_dark_gray"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/solid_dark_gray">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/viewpaggertitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/title_Headtracking"
+                android:textColor="@color/solid_white_color"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/inter_extrabold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.example.boatgooglefit.adapter.SwipeLockableViewPager
+                android:id="@+id/view_pager2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/circle_indicator"
+                app:layout_constraintTop_toBottomOf="@+id/viewpaggertitle">
+
+            </com.example.boatgooglefit.adapter.SwipeLockableViewPager>
+
+            <com.example.boatgooglefit.widget.DotsIndicator
+                android:id="@+id/circle_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:dot_height="6dp"
+                app:dot_width="6dp"
+                app:dots_count="3"
+                app:first_dot_height="0dp"
+                app:first_dot_width="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_next"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:margins_between_dots="10dp"
+                app:selected_dot_resource="@drawable/red_radius"
+                app:selected_dot_scale_factor="1.4"
+                app:unselected_dot_resource="@drawable/gray_radius" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:minWidth="190dp"
+                android:paddingStart="62dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="62dp"
+                android:paddingBottom="16dp"
+                android:text="@string/btn_lets_go"
+                app:backgroundTint="@color/solid_color"
+                app:cornerRadius="28dp"
+                app:elevation="2dp"
+                app:fontFamily="@font/montserrat_semibold"
+                app:layout_constraintBottom_toTopOf="@+id/btn_back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:textAllCaps="false" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="@string/btn_close"
+                android:textColor="@color/gray_color"
+                app:fontFamily="@font/montserrat_semibold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

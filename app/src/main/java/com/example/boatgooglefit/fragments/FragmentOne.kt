@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.boatgooglefit.databinding.ItemPageBinding
 
-class fragment_one : Fragment() {
+class FragmentOne : Fragment() {
 
     private var _binding: ItemPageBinding? = null
 

@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.13044579533941236" />
+        <entry key="app/src/main/res/drawable/button_bg_line.xml" value="0.1495" />
+        <entry key="app/src/main/res/drawable/gray_radious.xml" value="0.1515" />
+        <entry key="app/src/main/res/drawable/ic_image.xml" value="0.1255" />
+        <entry key="app/src/main/res/drawable/ic_play.xml" value="0.1555" />
+        <entry key="app/src/main/res/drawable/red_radius.xml" value="0.1515" />
+        <entry key="app/src/main/res/drawable/rounded_dialog.xml" value="0.1495" />
+        <entry key="app/src/main/res/layout/activity_bottom_sheet.xml" value="0.25098425196850394" />
+        <entry key="app/src/main/res/layout/activity_calibration.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_head_track_lear_more.xml" value="0.25677083333333334" />
+        <entry key="app/src/main/res/layout/activity_head_tracking.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_head_tracking_done.xml" value="0.25677083333333334" />
+        <entry key="app/src/main/res/layout/activity_head_tracking_intro_slides.xml" value="0.23333333333333334" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_secound.xml" value="0.21822916666666667" />
+        <entry key="app/src/main/res/layout/bottom_sheet_experiance_music.xml" value="0.25677083333333334" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.10520833333333333" />
+        <entry key="app/src/main/res/layout/item_page.xml" value="0.23333333333333334" />
+        <entry key="app/src/main/res/layout/item_page2.xml" value="0.23333333333333334" />
+        <entry key="app/src/main/res/layout/item_page3.xml" value="0.23333333333333334" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

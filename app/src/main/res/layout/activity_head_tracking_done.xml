@@ -1,6 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/viewpaggertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/title_Headtracking"
+        android:textColor="@color/solid_white_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/inter_extrabold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/viewpaggerdescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="18dp"
+        android:gravity="start"
+        android:text="@string/label_lorem_desc"
+        android:textColor="@color/light_gray_color"
+        android:textSize="14sp"
+        app:fontFamily="@font/roboto_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewpaggertitle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/viewpaggerdescription_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="18dp"
+        android:gravity="start"
+        android:text="@string/label_lorem_desc"
+        android:textColor="@color/light_gray_color"
+        android:textSize="14sp"
+        app:fontFamily="@font/roboto_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewpaggerdescription" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/viewpaggersubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_how_it_work"
+        android:textColor="@color/normal_gray_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/roboto_bold"
+        app:layout_constraintStart_toStartOf="@+id/viewpaggerdescription"
+        app:layout_constraintTop_toBottomOf="@+id/viewpaggerdescription_2" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/viewpaggerdesubscription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="start"
+        android:text="@string/label_how_desc"
+        android:textColor="@color/light_gray_color"
+        android:textSize="14sp"
+        app:fontFamily="@font/roboto_regular"
+        app:layout_constraintEnd_toEndOf="@+id/viewpaggerdescription"
+        app:layout_constraintStart_toStartOf="@+id/viewpaggerdescription"
+        app:layout_constraintTop_toBottomOf="@+id/viewpaggersubtitle" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/image_audio_lis"
+        app:layout_constraintBottom_toTopOf="@+id/btn_done"
+        app:layout_constraintEnd_toEndOf="@+id/viewpaggerdescription"
+        app:layout_constraintStart_toStartOf="@+id/viewpaggerdescription"
+        app:layout_constraintTop_toBottomOf="@+id/viewpaggerdesubscription" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:minWidth="190dp"
+        android:paddingStart="62dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="62dp"
+        android:paddingBottom="16dp"
+        android:text="@string/btn_done"
+        app:backgroundTint="@color/solid_color"
+        app:cornerRadius="28dp"
+        app:elevation="2dp"
+        app:fontFamily="@font/montserrat_semibold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_restart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:textAllCaps="false" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/btn_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:text="@string/btn_restart"
+        android:textColor="@color/gray_color"
+        app:fontFamily="@font/montserrat_semibold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

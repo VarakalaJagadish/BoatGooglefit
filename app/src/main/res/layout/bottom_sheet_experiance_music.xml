@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@drawable/rounded_dialog"
+    android:padding="10dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="@string/label_3d_music"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:fontFamily="@font/montserrat_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_sample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/rockerz_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continue_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_bg_line"
+        android:text="@string/btn_continue"
+        android:textColor="@color/solid_color"
+        android:textSize="12sp"
+        app:fontFamily="@font/inter_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_sample"
+        app:textAllCaps="false" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/btn_close"
+        android:textColor="@color/shadow_color"
+        android:textSize="14sp"
+        app:fontFamily="@font/montserrat_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/continue_btn"
+        app:textAllCaps="false" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

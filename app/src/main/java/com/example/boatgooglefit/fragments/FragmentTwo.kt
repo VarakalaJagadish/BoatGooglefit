@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.boatgooglefit.databinding.ItemPage2Binding
 
-class fragment_two : Fragment() {
+class FragmentTwo : Fragment() {
     private var _binding: ItemPage2Binding? = null
 
     private val binding get() = _binding!!

@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.boatgooglefit.databinding.ItemPage3Binding
 
-class fragment_three : Fragment() {
+class FragmentThree : Fragment() {
     private var _binding: ItemPage3Binding? = null
 
     private val binding get() = _binding!!
